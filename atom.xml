@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>wdh與你分享的喜悅</title>
+  
+  <subtitle>耕耘更多美好的事物～</subtitle>
+  <link href="https://wdh.tw/atom.xml" rel="self"/>
+  
+  <link href="https://wdh.tw/"/>
+  <updated>2021-05-31T18:32:59.280Z</updated>
+  <id>https://wdh.tw/</id>
+  
+  <author>
+    <name>wdh</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://wdh.tw/2021/05/31/hello-world/"/>
+    <id>https://wdh.tw/2021/05/31/hello-world/</id>
+    <published>2021-05-31T02:48:30.707Z</published>
+    <updated>2021-05-31T18:32:59.280Z</updated>
+    
+    <content type="html"><![CDATA[<p>大家好～～<br>研究了好幾天，終於（好像）可以上線了哈哈哈！</p><p>說說架站大概流程：<br>租域名 -&gt; 研究git page + hexo -&gt; 部署完成<br>花了不少時間～</p><p>聲明：<br>本站架設目的完全是為了<strong>滿足本人分享工作日常慾望</strong>．若有似乎得罪不得體的地方，肯定都是<strong>你們本身軟硬體相容性不佳</strong>XD</p><blockquote><hr><h2 id="你們本身軟硬體相容性不佳"><a href="#你們本身軟硬體相容性不佳" class="headerlink" title="你們本身軟硬體相容性不佳"></a><em><strong>你們本身軟硬體相容性不佳</strong></em></h2></blockquote><p>我要開始：<br><strong>亂攝影，搞資安，玩設備</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;大家好～～&lt;br&gt;研究了好幾天，終於（好像）可以上線了哈哈哈！&lt;/p&gt;
+&lt;p&gt;說說架站大概流程：&lt;br&gt;租域名 -&amp;gt; 研究git page + hexo -&amp;gt; 部署完成&lt;br&gt;花了不少時間～&lt;/p&gt;
+&lt;p&gt;聲明：&lt;br&gt;本站架設目的完全是為了&lt;strong&gt;滿足</summary>
+      
+    
+    
+    
+    
+    <category term="Hello World" scheme="https://wdh.tw/tags/Hello-World/"/>
+    
+  </entry>
+  
+</feed>
