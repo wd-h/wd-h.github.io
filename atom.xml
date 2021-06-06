@@ -6,7 +6,7 @@
   <link href="https://wdh.tw/atom.xml" rel="self"/>
   
   <link href="https://wdh.tw/"/>
-  <updated>2021-05-31T18:32:59.280Z</updated>
+  <updated>2021-06-06T18:50:46.058Z</updated>
   <id>https://wdh.tw/</id>
   
   <author>
@@ -17,21 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>榨乾nuc是義務（1）</title>
+    <link href="https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"/>
+    <id>https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/</id>
+    <published>2021-06-06T16:00:36.000Z</published>
+    <updated>2021-06-06T18:50:46.058Z</updated>
+    
+    <content type="html"><![CDATA[<div class="alert danger no-icon"><p>這篇不是推坑文，嘻嘻</p></div><span id="more"></span><h2>最大化的利用資源，一直是我個人對於手邊設備的基本訴求．</h2>買了一個設備，應當完整的利用它所有功能特性，應用於工作上娛樂上等等，才算對得起這個設備吧？<STRIKE>（對得起荷包）</STRIKE><p>前段時間呢，覺得自己有幾個電腦設備上的需求必須解決：</p><ul><li>一個可以讓我即使中離，也能繼續運作的作業環境．</li><li>較為安全，穩定的機器架構．</li><li>被入侵破壞也能瞬間復原的工作環境．</li><li>不會隨隨便便給你重新開機，使你全部工作一起重新開始．（Ｘ的Windows…）</li><li>可以的話，要省錢QAQ．</li></ul><p>一開始的想法是買個二手伺服器並架設虛擬環境來解決我的需求．直到某天看到被我閒置在家裡多年的小電腦nuc…</p><div class="figure center" style="width:70%;"><a class="fancybox" href="pic1.jpg" title="小電腦nuc" data-caption="小電腦nuc" data-fancybox="travel"><img class="fig-img" src="pic1.jpg" style="width:70%;height:70%;"alt="小電腦nuc"></a><span class="caption">小電腦nuc</span></div><div style="clear:both;"></div><p>就是這麼可愛的小電腦～原本是給家裡作為一般文書處理機用．<br>嘛，心血來潮Google了一下這台nuc，我發現了一件事情…</p><h2>我根本在浪費這台小電腦的才能！</h2><p>看看這些人都對他做了啥～ </p><blockquote><p><a href="https://cloud.tencent.com/developer/news/391937">All In One 高性能小主机，点歪技能树的Intel NUC8i7BEH开箱评测</a><br><a href="https://koolshare.cn/thread-164971-1-1.html">[台式机] nuc8i7beh的折腾之旅【7.31更新高性能非单臂软路由】</a><br><a href="https://henvic.dev/posts/homelab/">Homelab: Intel NUC with the ESXi hypervisor</a></p></blockquote><p>是不是喪心病狂～ 太殘酷了～ 榨乾到不要不要的～<br>我…完全認同上面連結大大們善用手中的資源哈哈～ 值得效仿！！</p><p>於是乎…</p><div class="figure center" style="width:100%;"><a class="fancybox" href="pic2.png" title="於是乎..." data-caption="於是乎..." data-fancybox="travel"><img class="fig-img" src="pic2.png" style="width:100%;height:100%;"alt="於是乎..."></a><span class="caption">於是乎...</span></div><div style="clear:both;"></div><p>嘿嘿這樣就對了！<br>下一篇將介紹一些折騰成功的結論．</p>]]></content>
+    
+    
+    <summary type="html">&lt;div class=&quot;alert danger no-icon&quot;&gt;&lt;p&gt;這篇不是推坑文，嘻嘻&lt;/p&gt;
+&lt;/div&gt;</summary>
+    
+    
+    
+    <category term="玩設備" scheme="https://wdh.tw/categories/%E7%8E%A9%E8%A8%AD%E5%82%99/"/>
+    
+    
+    <category term="nuc" scheme="https://wdh.tw/tags/nuc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://wdh.tw/2021/05/31/hello-world/"/>
     <id>https://wdh.tw/2021/05/31/hello-world/</id>
     <published>2021-05-31T02:48:30.707Z</published>
-    <updated>2021-05-31T18:32:59.280Z</updated>
+    <updated>2021-06-06T18:46:47.759Z</updated>
     
-    <content type="html"><![CDATA[<p>大家好～～<br>研究了好幾天，終於（好像）可以上線了哈哈哈！</p><p>說說架站大概流程：<br>租域名 -&gt; 研究git page + hexo -&gt; 部署完成<br>花了不少時間～</p><p>聲明：<br>本站架設目的完全是為了<strong>滿足本人分享工作日常慾望</strong>．若有似乎得罪不得體的地方，肯定都是<strong>你們本身軟硬體相容性不佳</strong>XD</p><blockquote><hr><h2 id="你們本身軟硬體相容性不佳"><a href="#你們本身軟硬體相容性不佳" class="headerlink" title="你們本身軟硬體相容性不佳"></a><em><strong>你們本身軟硬體相容性不佳</strong></em></h2></blockquote><p>我要開始：<br><strong>亂攝影，搞資安，玩設備</strong></p>]]></content>
+    <content type="html"><![CDATA[<p>大家好～～<br>研究了好幾天，終於（好像）可以上線了哈哈哈！</p><span id="more"></span><p>說說架站大概流程：<br>租域名 -&gt; 研究git page + hexo -&gt; 部署完成<br>花了不少時間～</p><p>聲明：<br>本站架設目的完全是為了<strong>滿足本人分享工作日常慾望</strong>．若有似乎得罪不得體的地方，肯定都是<strong>你們本身軟硬體相容性不佳</strong>XD</p><h2>你們本身軟硬體相容性不佳</h2><p>我要開始：<br><strong>亂攝影，搞資安，玩設備</strong></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;大家好～～&lt;br&gt;研究了好幾天，終於（好像）可以上線了哈哈哈！&lt;/p&gt;
-&lt;p&gt;說說架站大概流程：&lt;br&gt;租域名 -&amp;gt; 研究git page + hexo -&amp;gt; 部署完成&lt;br&gt;花了不少時間～&lt;/p&gt;
-&lt;p&gt;聲明：&lt;br&gt;本站架設目的完全是為了&lt;strong&gt;滿足</summary>
-      
+    <summary type="html">&lt;p&gt;大家好～～&lt;br&gt;研究了好幾天，終於（好像）可以上線了哈哈哈！&lt;/p&gt;</summary>
     
     
     
