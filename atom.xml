@@ -3,11 +3,11 @@
   <title>wdh與你分享的喜悅</title>
   
   <subtitle>耕耘更多美好的事物～</subtitle>
-  <link href="https://wdh.tw/atom.xml" rel="self"/>
+  <link href="http://127.0.0.1:4000/atom.xml" rel="self"/>
   
-  <link href="https://wdh.tw/"/>
-  <updated>2021-06-06T18:50:46.058Z</updated>
-  <id>https://wdh.tw/</id>
+  <link href="http://127.0.0.1:4000/"/>
+  <updated>2021-06-11T05:06:59.032Z</updated>
+  <id>http://127.0.0.1:4000/</id>
   
   <author>
     <name>wdh</name>
@@ -17,9 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>榨乾nuc是義務（2）</title>
+    <link href="http://127.0.0.1:4000/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"/>
+    <id>http://127.0.0.1:4000/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/</id>
+    <published>2021-06-11T05:48:45.000Z</published>
+    <updated>2021-06-11T05:06:59.032Z</updated>
+    
+    <content type="html"><![CDATA[<p>本篇要來總結nuc記憶體的部分．</p><span id="more"></span><p>來自官方的資料顯示，nuc第八代型號在記憶體上是僅支援到32GB的．</p><div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="NUC8i7BEH 官網資料" data-caption="NUC8i7BEH 官網資料" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="NUC8i7BEH 官網資料"></a><span class="caption">NUC8i7BEH 官網資料</span></div><div style="clear:both;"></div><p>嘛，還是有不甘心的玩家想突破天際，除了插好插滿外，還要插爆！於是就發現了一件事情…手上的nuc竟然也是可以支援64GB的記憶體的！</p><p>根據 <a href="https://williamlam.com/2019/03/64gb-memory-on-the-intel-nucs.html">64GB memory on the Intel NUCs?</a> William Lam 這位大大的拋磚引玉，整理了以下玩家回報清單：</p><table style="text-align: center;">    <thead>        <tr>            <th colspan="5">NUC 插滿64G 測試記憶體型號</th>        </tr>    </thead>    <tbody>        <tr>            <td>品牌</td>            <td>產品序號</td>            <td>相關參數</td>            <td>是否測試可用</td>        </tr>        <tr>            <td>三星 samsung</td>            <td>M471A4G43MB1-CTD</td>            <td>32GB 2Rx8 DDR4-2666</td>            <td><p>NUC8i7BEH 成功</p><p>NUC8i7HNK 成功</p><p>NUC7i3BNH 成功</p><p>NUC7i7DNHE 成功</p><p>NUC6i7KYK 成功</p><p>NUC6i5SYH 成功</p><p>NUC6i3SYH 成功</p></td>        </tr>        <tr>            <td>金士頓 kingston HyperX</td>            <td>HX426S16IB/32</td>            <td>32GB 4G x 64-Bit DDR4-2666</td>            <td><p>NUC7i5BNH 成功</p></td>        </tr>        <tr>            <td>金士頓 kingston HyperX</td>            <td>HX426S16IBK2/64</td>            <td>32GB 4G x 64-Bit x 2 pcs DDR4-2666</td>            <td><p>NUC8i7BEH 成功</p></td>        </tr>        <tr>            <td>美光 crucial</td>            <td>CT32G4SFD832A</td>            <td>32GB DDR4-3200</td>            <td><p>NUC8i7HVK 成功</p></td>        </tr>        <tr>            <td>美光 crucial</td>            <td>CT32G4SFD8266</td>            <td>32GB DDR4-2666</td>            <td><p>NUC8i7HVK 成功</p><p>NUC6i3SHY 成功</p></td>        </tr>        <tr>            <td>Mushkin Redline</td>            <td>MRA4S266GHHF32GX2</td>            <td>32GB DDR4-2666</td>            <td><p>NUC8i7HVK 成功</p></td>        </tr>    </tbody></table><p>現在記憶體漲價，要添購也是不小的開銷啊</p><div class="figure center" style="width:70%;"><a class="fancybox" href="pic2.jpg" title="漲價啦" data-caption="漲價啦" data-fancybox="travel"><img class="fig-img" src="pic2.jpg" style="width:70%;height:70%;"alt="漲價啦"></a><span class="caption">漲價啦</span></div><div style="clear:both;"></div><p>如果有成功再回來更新文章ＸＤ</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本篇要來總結nuc記憶體的部分．&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="玩設備" scheme="http://127.0.0.1:4000/categories/%E7%8E%A9%E8%A8%AD%E5%82%99/"/>
+    
+    
+    <category term="nuc" scheme="http://127.0.0.1:4000/tags/nuc/"/>
+    
+  </entry>
+  
+  <entry>
     <title>榨乾nuc是義務（1）</title>
-    <link href="https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"/>
-    <id>https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/</id>
+    <link href="http://127.0.0.1:4000/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"/>
+    <id>http://127.0.0.1:4000/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/</id>
     <published>2021-06-06T16:00:36.000Z</published>
     <updated>2021-06-06T18:50:46.058Z</updated>
     
@@ -31,17 +52,17 @@
     
     
     
-    <category term="玩設備" scheme="https://wdh.tw/categories/%E7%8E%A9%E8%A8%AD%E5%82%99/"/>
+    <category term="玩設備" scheme="http://127.0.0.1:4000/categories/%E7%8E%A9%E8%A8%AD%E5%82%99/"/>
     
     
-    <category term="nuc" scheme="https://wdh.tw/tags/nuc/"/>
+    <category term="nuc" scheme="http://127.0.0.1:4000/tags/nuc/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://wdh.tw/2021/05/31/hello-world/"/>
-    <id>https://wdh.tw/2021/05/31/hello-world/</id>
+    <link href="http://127.0.0.1:4000/2021/05/31/hello-world/"/>
+    <id>http://127.0.0.1:4000/2021/05/31/hello-world/</id>
     <published>2021-05-31T02:48:30.707Z</published>
     <updated>2021-06-06T18:46:47.759Z</updated>
     
@@ -53,7 +74,7 @@
     
     
     
-    <category term="Hello World" scheme="https://wdh.tw/tags/Hello-World/"/>
+    <category term="Hello World" scheme="http://127.0.0.1:4000/tags/Hello-World/"/>
     
   </entry>
   
