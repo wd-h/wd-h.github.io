@@ -6,7 +6,7 @@
   <link href="https://wdh.tw/atom.xml" rel="self"/>
   
   <link href="https://wdh.tw/"/>
-  <updated>2021-12-16T04:01:10.861Z</updated>
+  <updated>2021-12-16T05:41:37.832Z</updated>
   <id>https://wdh.tw/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"/>
     <id>https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/</id>
     <published>2021-12-16T03:27:23.000Z</published>
-    <updated>2021-12-16T04:01:10.861Z</updated>
+    <updated>2021-12-16T05:41:37.832Z</updated>
     
     <content type="html"><![CDATA[<p>最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j<br>來看看他是怎麼回事兒～～</p><span id="more"></span><p>目標網站系統大概要有以下條件才能發動成功</p><p>1.必須使用低版本java runtime (如8u191以下)<br>2.有引用Log4j套件，且版本在2.15.0以下</p><p>參考網路上一堆大神提供的Exploit Code來測試看看！</p><p>效果圖：</p><div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-caption="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)"></a><span class="caption">於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)</span></div><div style="clear:both;"></div><div class="figure center" style="width:90%;"><a class="fancybox" href="pic2.png" title="成功執行" data-caption="成功執行" data-fancybox="travel"><img class="fig-img" src="pic2.png" style="width:90%;height:90%;"alt="成功執行"></a><span class="caption">成功執行</span></div><div style="clear:both;"></div>]]></content>
     
