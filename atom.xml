@@ -6,7 +6,7 @@
   <link href="https://wdh.tw/atom.xml" rel="self"/>
   
   <link href="https://wdh.tw/"/>
-  <updated>2021-06-12T08:20:10.697Z</updated>
+  <updated>2021-12-16T04:01:10.861Z</updated>
   <id>https://wdh.tw/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Log4j玩玩一下</title>
+    <link href="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"/>
+    <id>https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/</id>
+    <published>2021-12-16T03:27:23.000Z</published>
+    <updated>2021-12-16T04:01:10.861Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j<br>來看看他是怎麼回事兒～～</p><span id="more"></span><p>目標網站系統大概要有以下條件才能發動成功</p><p>1.必須使用低版本java runtime (如8u191以下)<br>2.有引用Log4j套件，且版本在2.15.0以下</p><p>參考網路上一堆大神提供的Exploit Code來測試看看！</p><p>效果圖：</p><div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-caption="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)"></a><span class="caption">於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)</span></div><div style="clear:both;"></div><div class="figure center" style="width:90%;"><a class="fancybox" href="pic2.png" title="成功執行" data-caption="成功執行" data-fancybox="travel"><img class="fig-img" src="pic2.png" style="width:90%;height:90%;"alt="成功執行"></a><span class="caption">成功執行</span></div><div style="clear:both;"></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j&lt;br&gt;來看看他是怎麼回事兒～～&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="搞資安" scheme="https://wdh.tw/categories/%E6%90%9E%E8%B3%87%E5%AE%89/"/>
+    
+    
+    <category term="CVE-2021-44228" scheme="https://wdh.tw/tags/CVE-2021-44228/"/>
+    
+  </entry>
+  
+  <entry>
     <title>榨乾nuc是義務（2）</title>
     <link href="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"/>
     <id>https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/</id>
     <published>2021-06-11T05:48:45.000Z</published>
-    <updated>2021-06-12T08:20:10.697Z</updated>
+    <updated>2021-06-12T08:20:10.690Z</updated>
     
     <content type="html"><![CDATA[<p>本篇要來總結nuc記憶體的部分．</p><span id="more"></span><p>來自官方的資料顯示，nuc第八代型號在記憶體上是僅支援到32GB的．</p><div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="NUC8i7BEH 官網資料" data-caption="NUC8i7BEH 官網資料" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="NUC8i7BEH 官網資料"></a><span class="caption">NUC8i7BEH 官網資料</span></div><div style="clear:both;"></div><p>嘛，還是有不甘心的玩家想突破天際，除了插好插滿外，還要插爆！於是就發現了一件事情…手上的nuc竟然也是可以支援64GB的記憶體的！</p><p>根據 <a href="https://williamlam.com/2019/03/64gb-memory-on-the-intel-nucs.html">64GB memory on the Intel NUCs?</a> William Lam 這位大大的拋磚引玉，整理了以下玩家回報清單：</p><table style="text-align: center;">    <thead>        <tr>            <th colspan="5">NUC 插滿64G 測試記憶體型號</th>        </tr>    </thead>    <tbody>        <tr>            <td>品牌</td>            <td>產品序號</td>            <td>相關參數</td>            <td>是否測試可用</td>        </tr>        <tr>            <td>三星 samsung</td>            <td>M471A4G43MB1-CTD</td>            <td>32GB 2Rx8 DDR4-2666</td>            <td><p><span class="highlight-text green">NUC8i7BEH 成功</span></p><p><span class="highlight-text green">NUC8i7HNK 成功</span></p><p><span class="highlight-text green">NUC7i3BNH 成功</span></p><p><span class="highlight-text green">NUC7i7DNHE 成功</span></p><p><span class="highlight-text green">NUC6i7KYK 成功</span></p><p><span class="highlight-text green">NUC6i5SYH 成功</span></p><p><span class="highlight-text green">NUC6i3SYH 成功</span></p></td>        </tr>        <tr>            <td>金士頓 kingston HyperX</td>            <td>HX426S16IB/32</td>            <td>32GB 4G x 64-Bit DDR4-2666</td>            <td><p><span class="highlight-text green">NUC7i5BNH 成功</span></p></td>        </tr>        <tr>            <td>金士頓 kingston HyperX</td>            <td>HX426S16IBK2/64</td>            <td>32GB 4G x 64-Bit x 2 pcs DDR4-2666</td>            <td><p><span class="highlight-text green">NUC8i7BEH 成功</span></p></td>        </tr>        <tr>            <td>美光 crucial</td>            <td>CT32G4SFD832A</td>            <td>32GB DDR4-3200</td>            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p></td>        </tr>        <tr>            <td>美光 crucial</td>            <td>CT32G4SFD8266</td>            <td>32GB DDR4-2666</td>            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p><p><span class="highlight-text green">NUC6i3SHY 成功</span></p></td>        </tr>        <tr>            <td>Mushkin Redline</td>            <td>MRA4S266GHHF32GX2</td>            <td>32GB DDR4-2666</td>            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p></td>        </tr>    </tbody></table><p>現在記憶體漲價，要添購也是不小的開銷啊</p><div class="figure center" style="width:70%;"><a class="fancybox" href="pic2.jpg" title="漲價啦" data-caption="漲價啦" data-fancybox="travel"><img class="fig-img" src="pic2.jpg" style="width:70%;height:70%;"alt="漲價啦"></a><span class="caption">漲價啦</span></div><div style="clear:both;"></div><p>如果有成功再回來更新文章ＸＤ</p><p><span class="highlight-text red">2021/06/12 Updated</span></p><p>各位我成功啦～！ 想要跟我一樣加好加滿加爆的，這可以買～</p><div class="figure center" style="width:90%;"><a class="fancybox" href="pic3.png" title="成功啦" data-caption="成功啦" data-fancybox="travel"><img class="fig-img" src="pic3.png" style="width:90%;height:90%;"alt="成功啦"></a><span class="caption">成功啦</span></div><div style="clear:both;"></div><table><thead><tr><th align="center">品牌</th><th align="center">產品序號</th><th align="center">相關參數</th><th align="center">是否測試可用</th></tr></thead><tbody><tr><td align="center">美光 crucial</td><td align="center">CT32G4SFD832A</td><td align="center">32GB DDR4-3200</td><td align="center"><p><span class="highlight-text green">NUC8i7BEH 成功</span></p></td></tr></tbody></table>]]></content>
     
@@ -42,7 +63,7 @@
     <link href="https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"/>
     <id>https://wdh.tw/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/</id>
     <published>2021-06-06T16:00:36.000Z</published>
-    <updated>2021-06-06T18:50:46.058Z</updated>
+    <updated>2021-06-06T18:50:46.050Z</updated>
     
     <content type="html"><![CDATA[<div class="alert danger no-icon"><p>這篇不是推坑文，嘻嘻</p></div><span id="more"></span><h2>最大化的利用資源，一直是我個人對於手邊設備的基本訴求．</h2>買了一個設備，應當完整的利用它所有功能特性，應用於工作上娛樂上等等，才算對得起這個設備吧？<STRIKE>（對得起荷包）</STRIKE><p>前段時間呢，覺得自己有幾個電腦設備上的需求必須解決：</p><ul><li>一個可以讓我即使中離，也能繼續運作的作業環境．</li><li>較為安全，穩定的機器架構．</li><li>被入侵破壞也能瞬間復原的工作環境．</li><li>不會隨隨便便給你重新開機，使你全部工作一起重新開始．（Ｘ的Windows…）</li><li>可以的話，要省錢QAQ．</li></ul><p>一開始的想法是買個二手伺服器並架設虛擬環境來解決我的需求．直到某天看到被我閒置在家裡多年的小電腦nuc…</p><div class="figure center" style="width:70%;"><a class="fancybox" href="pic1.jpg" title="小電腦nuc" data-caption="小電腦nuc" data-fancybox="travel"><img class="fig-img" src="pic1.jpg" style="width:70%;height:70%;"alt="小電腦nuc"></a><span class="caption">小電腦nuc</span></div><div style="clear:both;"></div><p>就是這麼可愛的小電腦～原本是給家裡作為一般文書處理機用．<br>嘛，心血來潮Google了一下這台nuc，我發現了一件事情…</p><h2>我根本在浪費這台小電腦的才能！</h2><p>看看這些人都對他做了啥～ </p><blockquote><p><a href="https://cloud.tencent.com/developer/news/391937">All In One 高性能小主机，点歪技能树的Intel NUC8i7BEH开箱评测</a><br><a href="https://koolshare.cn/thread-164971-1-1.html">[台式机] nuc8i7beh的折腾之旅【7.31更新高性能非单臂软路由】</a><br><a href="https://henvic.dev/posts/homelab/">Homelab: Intel NUC with the ESXi hypervisor</a></p></blockquote><p>是不是喪心病狂～ 太殘酷了～ 榨乾到不要不要的～<br>我…完全認同上面連結大大們善用手中的資源哈哈～ 值得效仿！！</p><p>於是乎…</p><div class="figure center" style="width:100%;"><a class="fancybox" href="pic2.png" title="於是乎..." data-caption="於是乎..." data-fancybox="travel"><img class="fig-img" src="pic2.png" style="width:100%;height:100%;"alt="於是乎..."></a><span class="caption">於是乎...</span></div><div style="clear:both;"></div><p>嘿嘿這樣就對了！<br>下一篇將介紹一些折騰成功的結論．</p>]]></content>
     
@@ -63,8 +84,8 @@
     <title>Hello World</title>
     <link href="https://wdh.tw/2021/05/31/hello-world/"/>
     <id>https://wdh.tw/2021/05/31/hello-world/</id>
-    <published>2021-05-31T02:48:30.707Z</published>
-    <updated>2021-06-06T18:46:47.759Z</updated>
+    <published>2021-05-31T02:48:30.000Z</published>
+    <updated>2021-06-06T18:46:47.750Z</updated>
     
     <content type="html"><![CDATA[<p>大家好～～<br>研究了好幾天，終於（好像）可以上線了哈哈哈！</p><span id="more"></span><p>說說架站大概流程：<br>租域名 -&gt; 研究git page + hexo -&gt; 部署完成<br>花了不少時間～</p><p>聲明：<br>本站架設目的完全是為了<strong>滿足本人分享工作日常慾望</strong>．若有似乎得罪不得體的地方，肯定都是<strong>你們本身軟硬體相容性不佳</strong>XD</p><h2>你們本身軟硬體相容性不佳</h2><p>我要開始：<br><strong>亂攝影，搞資安，玩設備</strong></p>]]></content>
     

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="wdh與你分享的喜悅">
-    <title>榨乾nuc是義務（2） - wdh與你分享的喜悅</title>
+    <title>Log4j玩玩一下 - wdh與你分享的喜悅</title>
     <meta name="author" content="wdh">
     
     
@@ -17,23 +17,22 @@
             <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
         
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"wdh","sameAs":["https://github.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"avatar.jpg"},"articleBody":"本篇要來總結nuc記憶體的部分．\n\n來自官方的資料顯示，nuc第八代型號在記憶體上是僅支援到32GB的．\nNUC8i7BEH 官網資料\n\n嘛，還是有不甘心的玩家想突破天際，除了插好插滿外，還要插爆！於是就發現了一件事情…手上的nuc竟然也是可以支援64GB的記憶體的！\n根據 64GB memory on the Intel NUCs? William Lam 這位大大的拋磚引玉，整理了以下玩家回報清單：\n\n    \n        \n            NUC 插滿64G 測試記憶體型號\n        \n    \n    \n        \n            品牌\n            產品序號\n            相關參數\n            是否測試可用\n        \n        \n            三星 samsung\n            M471A4G43MB1-CTD\n            32GB 2Rx8 DDR4-2666\n            NUC8i7BEH 成功NUC8i7HNK 成功NUC7i3BNH 成功NUC7i7DNHE 成功NUC6i7KYK 成功NUC6i5SYH 成功NUC6i3SYH 成功\n        \n        \n            金士頓 kingston HyperX\n            HX426S16IB/32\n            32GB 4G x 64-Bit DDR4-2666\n            NUC7i5BNH 成功\n        \n        \n            金士頓 kingston HyperX\n            HX426S16IBK2/64\n            32GB 4G x 64-Bit x 2 pcs DDR4-2666\n            NUC8i7BEH 成功\n        \n        \n            美光 crucial\n            CT32G4SFD832A\n            32GB DDR4-3200\n            NUC8i7HVK 成功\n        \n        \n            美光 crucial\n            CT32G4SFD8266\n            32GB DDR4-2666\n            NUC8i7HVK 成功NUC6i3SHY 成功\n        \n        \n            Mushkin Redline\n            MRA4S266GHHF32GX2\n            32GB DDR4-2666\n            NUC8i7HVK 成功\n        \n    \n\n\n現在記憶體漲價，要添購也是不小的開銷啊\n漲價啦\n\n如果有成功再回來更新文章ＸＤ\n2021/06/12 Updated\n\n各位我成功啦～！ 想要跟我一樣加好加滿加爆的，這可以買～\n成功啦\n\n\n\n\n品牌\n產品序號\n相關參數\n是否測試可用\n\n\n\n美光 crucial\nCT32G4SFD832A\n32GB DDR4-3200\nNUC8i7BEH 成功\n\n\n","dateCreated":"2021-06-11T13:48:45+08:00","dateModified":"2021-06-12T16:20:10+08:00","datePublished":"2021-06-11T13:48:45+08:00","description":"本篇要來總結nuc記憶體的部分．","headline":"榨乾nuc是義務（2）","image":["thumbnail.png","thumbnail.png"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"},"publisher":{"@type":"Organization","name":"wdh","sameAs":["https://github.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"avatar.jpg","logo":{"@type":"ImageObject","url":"avatar.jpg"}},"url":"https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/","keywords":"nuc","thumbnailUrl":"thumbnail.png"}</script>
-    <meta name="description" content="本篇要來總結nuc記憶體的部分．">
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"wdh","sameAs":["https://github.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"avatar.jpg"},"articleBody":"最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j來看看他是怎麼回事兒～～\n\n\n目標網站系統大概要有以下條件才能發動成功\n1.必須使用低版本java runtime (如8u191以下)2.有引用Log4j套件，且版本在2.15.0以下\n參考網路上一堆大神提供的Exploit Code來測試看看！\n效果圖：\n於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)\n\n成功執行\n\n","dateCreated":"2021-12-16T11:27:23+08:00","dateModified":"2021-12-16T12:01:10+08:00","datePublished":"2021-12-16T11:27:23+08:00","description":"最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j來看看他是怎麼回事兒～～","headline":"Log4j玩玩一下","image":["thumbnail.png","thumbnail.jpg"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"},"publisher":{"@type":"Organization","name":"wdh","sameAs":["https://github.com/","https://facebook.com/","https://www.linkedin.com/profile/","mailto"],"image":"avatar.jpg","logo":{"@type":"ImageObject","url":"avatar.jpg"}},"url":"https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/","keywords":"CVE-2021-44228","thumbnailUrl":"thumbnail.png"}</script>
+    <meta name="description" content="最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j來看看他是怎麼回事兒～～">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="榨乾nuc是義務（2）">
-<meta property="og:url" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/index.html">
+<meta property="og:title" content="Log4j玩玩一下">
+<meta property="og:url" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/index.html">
 <meta property="og:site_name" content="wdh與你分享的喜悅">
-<meta property="og:description" content="本篇要來總結nuc記憶體的部分．">
+<meta property="og:description" content="最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j來看看他是怎麼回事兒～～">
 <meta property="og:locale" content="zh_TW">
-<meta property="og:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/pic1.png">
-<meta property="og:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/pic2.jpg">
-<meta property="og:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/pic3.png">
-<meta property="article:published_time" content="2021-06-11T05:48:45.000Z">
-<meta property="article:modified_time" content="2021-06-12T08:20:10.690Z">
+<meta property="og:image" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/pic1.png">
+<meta property="og:image" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/pic2.png">
+<meta property="article:published_time" content="2021-12-16T03:27:23.000Z">
+<meta property="article:modified_time" content="2021-12-16T04:01:10.861Z">
 <meta property="article:author" content="wdh">
-<meta property="article:tag" content="nuc">
+<meta property="article:tag" content="CVE-2021-44228">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/pic1.png">
+<meta name="twitter:image" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/pic1.png">
     
     
         
@@ -42,12 +41,12 @@
         <meta property="og:image" content="https://wdh.tw/assets/images/avatar.jpg"/>
     
     
-        <meta property="og:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/thumbnail.png"/>
-        <meta class="swiftype" name="image" data-type="enum" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/thumbnail.png"/>
+        <meta property="og:image" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/thumbnail.png"/>
+        <meta class="swiftype" name="image" data-type="enum" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/thumbnail.png"/>
     
     
-        <meta property="og:image" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/thumbnail.png"/>
-        <meta class="swiftype" name="image" data-type="enum" content="https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/thumbnail.png"/>
+        <meta property="og:image" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/thumbnail.jpg"/>
+        <meta class="swiftype" name="image" data-type="enum" content="https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/thumbnail.jpg"/>
     
     
     <!--STYLES-->
@@ -304,8 +303,8 @@
             
         <div class="post-header-cover
                     text-center
-                    post-header-cover--full"
-             style="background-image:url('/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/thumbnail.png');"
+                    post-header-cover--partial"
+             style="background-image:url('/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/thumbnail.jpg');"
              data-behavior="4">
             
         </div>
@@ -317,26 +316,26 @@
                 
 <article class="post">
     
-        <span class="post-header-cover-caption caption">喂喂這DIY太殘暴了吧</span>
+        <span class="post-header-cover-caption caption">decribe here</span>
     
     
         <div class="post-header main-content-wrap text-center">
     
         <h1 class="post-title">
-            榨乾nuc是義務（2）
+            Log4j玩玩一下
         </h1>
     
     
         <div class="post-meta">
-    <time datetime="2021-06-11T13:48:45+08:00">
+    <time datetime="2021-12-16T11:27:23+08:00">
 	
-		    6月 11, 2021
+		    12月 16, 2021
     	
     </time>
     
         <span>分類 </span>
         
-    <a class="category-link" href="/categories/%E7%8E%A9%E8%A8%AD%E5%82%99/">玩設備</a>
+    <a class="category-link" href="/categories/%E6%90%9E%E8%B3%87%E5%AE%89/">搞資安</a>
 
 
     
@@ -348,90 +347,17 @@
     
     <div class="post-content markdown">
         <div class="main-content-wrap">
-            <p>本篇要來總結nuc記憶體的部分．</p>
+            <p>最近吵得沸沸揚揚，使得全世界寫code工程師加班的漏洞：CVE-2021-44228 Log4j<br>來看看他是怎麼回事兒～～</p>
 <span id="more"></span>
-<p>來自官方的資料顯示，nuc第八代型號在記憶體上是僅支援到32GB的．</p>
-<div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="NUC8i7BEH 官網資料" data-caption="NUC8i7BEH 官網資料" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="NUC8i7BEH 官網資料"></a><span class="caption">NUC8i7BEH 官網資料</span></div><div style="clear:both;"></div>
 
-<p>嘛，還是有不甘心的玩家想突破天際，除了插好插滿外，還要插爆！於是就發現了一件事情…手上的nuc竟然也是可以支援64GB的記憶體的！</p>
-<p>根據 <a target="_blank" rel="noopener" href="https://williamlam.com/2019/03/64gb-memory-on-the-intel-nucs.html">64GB memory on the Intel NUCs?</a> William Lam 這位大大的拋磚引玉，整理了以下玩家回報清單：</p>
-<table style="text-align: center;">
-    <thead>
-        <tr>
-            <th colspan="5">NUC 插滿64G 測試記憶體型號</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>品牌</td>
-            <td>產品序號</td>
-            <td>相關參數</td>
-            <td>是否測試可用</td>
-        </tr>
-        <tr>
-            <td>三星 samsung</td>
-            <td>M471A4G43MB1-CTD</td>
-            <td>32GB 2Rx8 DDR4-2666</td>
-            <td><p><span class="highlight-text green">NUC8i7BEH 成功</span></p><p><span class="highlight-text green">NUC8i7HNK 成功</span></p><p><span class="highlight-text green">NUC7i3BNH 成功</span></p><p><span class="highlight-text green">NUC7i7DNHE 成功</span></p><p><span class="highlight-text green">NUC6i7KYK 成功</span></p><p><span class="highlight-text green">NUC6i5SYH 成功</span></p><p><span class="highlight-text green">NUC6i3SYH 成功</span></p></td>
-        </tr>
-        <tr>
-            <td>金士頓 kingston HyperX</td>
-            <td>HX426S16IB/32</td>
-            <td>32GB 4G x 64-Bit DDR4-2666</td>
-            <td><p><span class="highlight-text green">NUC7i5BNH 成功</span></p></td>
-        </tr>
-        <tr>
-            <td>金士頓 kingston HyperX</td>
-            <td>HX426S16IBK2/64</td>
-            <td>32GB 4G x 64-Bit x 2 pcs DDR4-2666</td>
-            <td><p><span class="highlight-text green">NUC8i7BEH 成功</span></p></td>
-        </tr>
-        <tr>
-            <td>美光 crucial</td>
-            <td>CT32G4SFD832A</td>
-            <td>32GB DDR4-3200</td>
-            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p></td>
-        </tr>
-        <tr>
-            <td>美光 crucial</td>
-            <td>CT32G4SFD8266</td>
-            <td>32GB DDR4-2666</td>
-            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p><p><span class="highlight-text green">NUC6i3SHY 成功</span></p></td>
-        </tr>
-        <tr>
-            <td>Mushkin Redline</td>
-            <td>MRA4S266GHHF32GX2</td>
-            <td>32GB DDR4-2666</td>
-            <td><p><span class="highlight-text green">NUC8i7HVK 成功</span></p></td>
-        </tr>
-    </tbody>
-</table>
+<p>目標網站系統大概要有以下條件才能發動成功</p>
+<p>1.必須使用低版本java runtime (如8u191以下)<br>2.有引用Log4j套件，且版本在2.15.0以下</p>
+<p>參考網路上一堆大神提供的Exploit Code來測試看看！</p>
+<p>效果圖：</p>
+<div class="figure center" style="width:90%;"><a class="fancybox" href="pic1.png" title="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-caption="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)" data-fancybox="travel"><img class="fig-img" src="pic1.png" style="width:90%;height:90%;"alt="於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)"></a><span class="caption">於網站中任意欄位輸入Exploit Code (以 Openfire 舉例)</span></div><div style="clear:both;"></div>
 
-<p>現在記憶體漲價，要添購也是不小的開銷啊</p>
-<div class="figure center" style="width:70%;"><a class="fancybox" href="pic2.jpg" title="漲價啦" data-caption="漲價啦" data-fancybox="travel"><img class="fig-img" src="pic2.jpg" style="width:70%;height:70%;"alt="漲價啦"></a><span class="caption">漲價啦</span></div><div style="clear:both;"></div>
+<div class="figure center" style="width:90%;"><a class="fancybox" href="pic2.png" title="成功執行" data-caption="成功執行" data-fancybox="travel"><img class="fig-img" src="pic2.png" style="width:90%;height:90%;"alt="成功執行"></a><span class="caption">成功執行</span></div><div style="clear:both;"></div>
 
-<p>如果有成功再回來更新文章ＸＤ</p>
-<p><span class="highlight-text red">2021/06/12 Updated</span></p>
-
-<p>各位我成功啦～！ 想要跟我一樣加好加滿加爆的，這可以買～</p>
-<div class="figure center" style="width:90%;"><a class="fancybox" href="pic3.png" title="成功啦" data-caption="成功啦" data-fancybox="travel"><img class="fig-img" src="pic3.png" style="width:90%;height:90%;"alt="成功啦"></a><span class="caption">成功啦</span></div><div style="clear:both;"></div>
-
-<table>
-<thead>
-<tr>
-<th align="center">品牌</th>
-<th align="center">產品序號</th>
-<th align="center">相關參數</th>
-<th align="center">是否測試可用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">美光 crucial</td>
-<td align="center">CT32G4SFD832A</td>
-<td align="center">32GB DDR4-3200</td>
-<td align="center"><p><span class="highlight-text green">NUC8i7BEH 成功</span></p></td>
-</tr>
-</tbody></table>
 
             
 
@@ -443,7 +369,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">標籤</span><br/>
                 
-    <a class="tag tag--primary tag--small t-none-link" href="/tags/nuc/" rel="tag">nuc</a>
+    <a class="tag tag--primary tag--small t-none-link" href="/tags/CVE-2021-44228/" rel="tag">CVE-2021-44228</a>
 
             </div>
         
@@ -453,14 +379,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
-                    data-tooltip="Log4j玩玩一下"
-                    aria-label="上一篇: Log4j玩玩一下"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -470,9 +393,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"
-                    data-tooltip="榨乾nuc是義務（1）"
-                    aria-label="下一篇: 榨乾nuc是義務（1）"
+                    href="/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    data-tooltip="榨乾nuc是義務（2）"
+                    aria-label="下一篇: 榨乾nuc是義務（2）"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -497,7 +420,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -510,7 +433,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -523,7 +446,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://plus.google.com/share?url=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Google+"
                     aria-label="分享到 Google+"
                 >
@@ -568,14 +491,11 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    
-                <a
-                    class="post-action-btn btn btn--default tooltip--top"
-                    href="/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
-                    data-tooltip="Log4j玩玩一下"
-                    aria-label="上一篇: Log4j玩玩一下"
-                >
-                    
+                    <a
+                        class="post-action-btn btn btn--disabled"
+                        aria-hidden="true"
+                    >
+                        
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                         <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
                     </a>
@@ -585,9 +505,9 @@
                     
                 <a
                     class="post-action-btn btn btn--default tooltip--top"
-                    href="/2021/06/07/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%881%EF%BC%89/"
-                    data-tooltip="榨乾nuc是義務（1）"
-                    aria-label="下一篇: 榨乾nuc是義務（1）"
+                    href="/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    data-tooltip="榨乾nuc是義務（2）"
+                    aria-label="下一篇: 榨乾nuc是義務（2）"
                 >
                     
                         <span class="hide-xs hide-sm text-small icon-mr">下一篇</span>
@@ -612,7 +532,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Facebook"
                     aria-label="分享到 Facebook"
                 >
@@ -625,7 +545,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Twitter"
                     aria-label="分享到 Twitter"
                 >
@@ -638,7 +558,7 @@
             <li class="post-action hide-xs">
                 <a
                     class="post-action-btn btn btn--default"
-                    target="new" href="https://plus.google.com/share?url=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                    target="new" href="https://plus.google.com/share?url=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                     title="分享到 Google+"
                     aria-label="分享到 Google+"
                 >
@@ -672,7 +592,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                         aria-label="分享到 Facebook"
                     >
                         <i class="fab fa-facebook" aria-hidden="true"></i><span>分享到 Facebook</span>
@@ -685,7 +605,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                        href="https://twitter.com/intent/tweet?text=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                         aria-label="分享到 Twitter"
                     >
                         <i class="fab fa-twitter" aria-hidden="true"></i><span>分享到 Twitter</span>
@@ -698,7 +618,7 @@
                     <a
                         class="share-option-btn"
                         target="new"
-                        href="https://plus.google.com/share?url=https://wdh.tw/2021/06/11/%E6%A6%A8%E4%B9%BEnuc%E6%98%AF%E7%BE%A9%E5%8B%99%EF%BC%882%EF%BC%89/"
+                        href="https://plus.google.com/share?url=https://wdh.tw/2021/12/16/Log4j%E7%8E%A9%E7%8E%A9%E4%B8%80%E4%B8%8B/"
                         aria-label="分享到 Google+"
                     >
                         <i class="fab fa-google-plus" aria-hidden="true"></i><span>分享到 Google+</span>
